@@ -10,7 +10,8 @@ on:
   AWS_SECERET_ACCESS_KEY=
   jobs:
    build:
-   run_on:actions/checkout@v3
+   run_on:
+   uses:actions/checkout@v3
    -name:Run a one-linux server
    run:echo Hello,World!
    -name:npm install,build and test
